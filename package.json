@@ -20,12 +20,21 @@
     }
   },
   "lint-staged": {
-    "*.js": ["yarn lint:script", "git add --force"],
-    "*.scss": ["yarn lint:style", "git add --force"]
+    "*.js": [
+      "yarn lint:script",
+      "git add --force"
+    ],
+    "*.scss": [
+      "yarn lint:style",
+      "git add --force"
+    ]
   },
   "author": "kota",
   "license": "ISC",
-  "browserslist": ["last 2 versions", "ie 9"],
+  "browserslist": [
+    "last 2 versions",
+    "ie 9"
+  ],
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.4.4",
@@ -75,6 +84,7 @@
     "postcss-media-minmax": "^4.0.0",
     "postcss-nested": "^4.1.2",
     "postcss-reporter": "^6.0.1",
+    "postcss-scss": "^2.0.0",
     "postcss-simple-vars": "^5.0.2",
     "pre-commit": "^1.2.2",
     "prerender-spa-plugin": "^3.4.0",
